@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utilities for glam */
+:root{
+  --accent: 138,92,246; /* purple rgb for glows */
+  --accent2: 59,130,246; /* blue rgb */
+}
+
+/* gradient glow behind headers */
+.section-glow {
+  background: radial-gradient(closest-side, rgba(var(--accent),0.12), transparent 40%);
+}
+
+/* glass card */
+.glass {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(8px);
+}
+
+/* subtle neon text */
+.neon {
+  text-shadow: 0 2px 20px rgba(var(--accent),0.18), 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* typewriter caret */
+.typewriter-caret {
+  width: 2px;
+  height: 1.05em;
+  background: rgb(var(--accent));
+  display: inline-block;
+  margin-left: 6px;
+  animation: blink 1s infinite;
+}
+@keyframes blink { 50% { opacity: 0 } }
+
+/* modal backdrop */
+.modal-backdrop {
+  background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.6));
+}
