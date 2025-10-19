@@ -7,17 +7,13 @@ import Contact from "./components/Contact";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg-900 text-gray-200 font-inter">
+    <div className="bg-bg-light dark:bg-bg-dark text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Navbar />
-      <main className="pt-20">
-        <Hero />
-        <section className="max-w-6xl mx-auto px-6 space-y-28">
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-        </section>
-      </main>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }
