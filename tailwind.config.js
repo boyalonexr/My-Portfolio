@@ -4,9 +4,19 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      animation: {
+        roll: 'roll 1s linear infinite',
+      },
+      keyframes: {
+        roll: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
      colors: {
         'bg-light': '#f9fafb',
         'bg-dark': '#0b0b0d',
+        'custom-purple': '#8b5cf6',
         'accent-purple': '#8b5cf6',
         'accent-blue': '#3b82f6',
         'light-glass': 'rgba(255,255,255,0.8)',
